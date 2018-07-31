@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>FRIEND FINDER</title>
+
+
+
+	<!-- Link to the jQuery Library -->
+
+  	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+          
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+	<header>
+
+		<nav>
+
+			<div class="nav-wrapper white accent 1">
+
+				<i class="fa fa-address-book-o fa-5x" aria-hidden="true" id=logo-icon></i>
+
+				<a href="/" class="brand-logo" id="logo">FRIEND FINDER</a>
+
+				<ul class="right hide-on-med-and-down" id="head-nav-links">
+
+					<li><a href="/survey">Survey</a></li>
+
+					<li><a href="/api/friends">API Friends List</a></li>
+
+					
+				</ul>
+
+			</div>
+
+		</nav>
+
+	</header>
+
+
+
+	<main>
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col s12 z-depth-5 mainpanel">
+
+					<div id="mainpanel-content">
+
+						<h1>Survey Questions</h1>
+
+						<div class="divider"></div>
+
+
+
+						<h3>You</h3>
+
+
+
+						<div class="input-field col s6">
+
+							<h5>Name (Required)</h5>
+
+							<i class="material-icons prefix">account_circle</i>
+
+							<input type="text" class="validate" placeholder="Your Name Here" id="userName">
+
+						</div>
+
+
+
+						<div class="input-field col s6">
+
+							<h5>Link to Photo Image </h5>
+
+							<i class="material-icons prefix">picture_in_picture</i>
+
+							<input type="text" class="validate" placeholder="Photo Link Here" id="userPhoto">
+
+						</div>
+
+
+						<div class="input-field col s12">
+
+							<h3>Q1</h3>
+
+							<h5>Looking for Adventure</h5>
+
+							<select id="Q1">
+
+								
+								<option value="1">1 (Disagree)</option>
+
+								<option value="2">2</option>
+
+								<option value="3">3</option>
+
+								<option value="4">4</option>
+
+								<option value="5">5 (Agree)</option>
+
+							</select>
+
+						</div>
+
+
+
+						<div class="input-field col s12">
+
+							<h3>Q2</h3>
+
+							<h5>Practically Minded</h5>
+
+							<select id="Q2">
+								
+								<option value="1">1 (Disagree)</option>
+
+								<option value="2">2</option>
+
+								<option value="3">3</option>
+
+								<option value="4">4</option>
+
+								<option value="5">5 (Agree)</option>
+
+							</select>
+
+						</div>
+
+
+
+						<div class="input-field col s12">
+
+							<h3>Q3</h3>
+
+							<h5>Staying Calm</h5>
+
+							<select id="Q3">
+
+								
+								<option value="1">1 (Disagree)</option>
+
+								<option value="2">2</option>
+
+								<option value="3">3</option>
+
+								<option value="4">4</option>
+
+								<option value="5">5 (Agree)</option>
+
+							</select>
+
+						</div>
+
+
+
+						<div class="input-field col s12">
+
+							<h3>Q4</h3>
+
+							<h5>Impulsive</h5>
+
+							<select id="Q4">
+
+								
+								<option value="1">1 (Strongly Disagree)</option>
+
+								<option value="2">2</option>
+
+								<option value="3">3</option>
+
+								<option value="4">4</option>
+
+								<option value="5">5 (Strongly Agree)</option>
+
+							</select>
+
+						</div>
+
+
+
+						<div class="input-field col s12">
+
+							<h3>Q5</h3>
+
+							<h5>Volatile</h5>
+
+							<select id="Q5">
+							
+
+								<option value="1">1 (Disagree)</option>
+
+								<option value="2">2</option>
+
+								<option value="3">3</option>
+
+								<option value="4">4</option>
+
+								<option value="5">5 (Agree)</option>
+
+							</select>
+
+						</div>
+
+
+
+						<div class="input-field col s12">
+
+							<h3>Q6</h3>
+
+							<h5>Introvert</h5>
+
+							<select id="Q6">
+
+								
+								<option value="1">1 (Disagree)</option>
+
+								<option value="2">2</option>
+
+								<option value="3">3</option>
+
+								<option value="4">4</option>
+
+								<option value="5">5 (Agree)</option>
+
+							</select>
+
+						</div>
+
+
+
+						<div class="input-field col s12">
+
+							<h3>Q7</h3>
+
+							<h5>Honest</h5>
+
+							<select id="Q7">
+
+								
+								<option value="1">1 (Disagree)</option>
+
+								<option value="2">2</option>
+
+								<option value="3">3</option>
+
+								<option value="4">4</option>
+
+								<option value="5">5 (Agree)</option>
+
+							</select>
+
+						</div>
+
+
+
+						<div class="input-field col s12">
+
+							<h3>Q8</h3>
+
+							<h5> Daydreamer</h5>
+
+							<select id="Q8">
+
+								
+								<option value="1">1 (Disagree)</option>
+
+								<option value="2">2</option>
+
+								<option value="3">3</option>
+
+								<option value="4">4</option>
+
+								<option value="5">5 (Agree)</option>
+
+							</select>
+
+						</div>
+
+
+
+						<div class="input-field col s12">
+
+							<h3>Q9</h3>
+
+							<h5>Good Listener</h5>
+
+							<select id="Q9">
+
+								
+								<option value="1">1 (Disagree)</option>
+
+								<option value="2">2</option>
+
+								<option value="3">3</option>
+
+								<option value="4">4</option>
+
+								<option value="5">5 (Agree)</option>
+
+							</select>
+
+						</div>
+
+
+
+						<div class="input-field col s12">
+
+							<h3>Q10</h3>
+
+							<h5>Sociable</h5>
+
+							<select id="Q10">
+
+								
+								<option value="1">1 (Disagree)</option>
+
+								<option value="2">2</option>
+
+								<option value="3">3</option>
+
+								<option value="4">4</option>
+
+								<option value="5">5 (Agree)</option>
+
+							</select>
+
+						</div>
+
+
+						<div>
+
+							<button class="btn" type="submit" name="action" id="submitButton">Submit Responses
+
+								<i class="material-icons right">send</i>
+
+							</button>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</main>
+
+
+
+	<footer class="page-footer white accent-1">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col l6 s12">
+
+					<h5 class="white-text">FRIEND FINDER</h5>
+
+					<p class="grey-text text-lighten-4">Thank you </p>
+
+				</div>
+
+				<div class="col l4 offset-l2 s12">
+
+					<h5 class="white-text">Links</h5>
+
+					<ul>
+
+						<li><a class="grey-text text-lighten-3" href="/api/friends">API Friends List</a></li>
+
+						
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		
+
+		</div>
+
+	</footer>
+
+
+	<div id="modal1" class="modal">
+
+		<div class="modal-content">
+
+			<h4>Match</h4>
+
+			<div class="divider"></div>
+
+			<h5 id="userMatch"></h5>
+
+			<img id="userMatchImage" class="materialboxed" width="650" src="">
+
+		</div>
+
+		
+	</div>
+
+
+
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			$('select').material_select();
+
+
+
+			
+			});
+
+		
+
+		$('#submitButton').on('click', function(event) {
+
+			event.preventDefault();
+
+
+			var userInput = {
+
+				name: $('#userName').val().trim(),
+
+				photo: $('#userPhoto').val().trim(),
+
+				scores:[
+
+					$('#question1').val().trim(),
+
+					$('#question2').val().trim(),
+
+					$('#question3').val().trim(),
+
+					$('#question4').val().trim(),
+
+					$('#question5').val().trim(),
+
+					$('#question6').val().trim(),
+
+					$('#question7').val().trim(),
+
+					$('#question8').val().trim(),
+
+					$('#question9').val().trim(),
+
+					$('#question10').val().trim()
+
+				]
+
+			};
+
+			
+			$.post('/api/friends', userInput)
+
+      		.done(function(data) {
+
+      			
+      			$('#userMatch').html(data.matchName);
+
+		    	$("#userMatchImage").attr("src", data.matchImage);
+
+      			$('#modal1').modal('open');
+
+      		});
+
+		});
+
+	</script>
+
+</body>
+
+</html>
